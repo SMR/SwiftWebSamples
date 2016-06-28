@@ -1,0 +1,3 @@
+[submodule "KituraHelloWorld/Kitura-Build"]
+	path = KituraHelloWorld/Kitura-Build
+	url = https://github.com/IBM-Swift/Kitura-Build.git
