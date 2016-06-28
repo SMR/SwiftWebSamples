@@ -34,10 +34,10 @@ let app = Application(providers: [
     --workDir to the application upon execution.
 */
 app.get("/") { request in
-    return try app.view("welcome.html")
+       return "Hello, world"
 }
 
-let port = app.config["app", "port"].int ?? 8090
+let port = app.config["app", "port"].int ?? 8080
 
 // Print what link to visit for default port
 print("Visit http://localhost:\(port)")
