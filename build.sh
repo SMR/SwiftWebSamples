@@ -2,6 +2,10 @@
 
 for i in *HelloWorld; do
 	cd $i
-	swift build -Xcc -fblocks -Xlinker -ldispatch
+	if [ -f Makefile ] ; then
+		make
+	else
+		swift build 
+	fi
 	cd ..
 done
