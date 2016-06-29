@@ -5,7 +5,7 @@ PerfectServer.initializeServices()
 Routing.Routes["/"] = {
     request, response in
     
-    response.appendBody(string: "<html><title>Hello, world!</title><body>Hello, world!</body></html>")
+    response.appendBody(string: "<html><title>Hello, world!</title><body><A HREF=\"https://github.com/PerfectlySoft/Perfect\">Perfect</A> says: 'Hello, world!'</body></html>")
     response.completed()
 }
 

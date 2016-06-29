@@ -37,7 +37,7 @@ Log.logger = HeliumLogger()
 //Return the default page for a unqualified URL
 router.get("/") {
     request, response, next in
-    response.send("Hello, World!")
+    response.send("<html><title>Hello, world!</title><body><A HREF=\"https://github.com/IBM-Swift/Kitura\">Kitura</A> says: 'Hello, world!'</body></html>")
     next()
 }
 

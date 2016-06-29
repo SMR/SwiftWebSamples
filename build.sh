@@ -9,3 +9,7 @@ for i in *HelloWorld; do
 	fi
 	cd ..
 done
+
+for hw in */.build/debug/*HelloWorld; do
+	./$hw < /dev/null 1>&2 &
+done
